@@ -12,7 +12,12 @@ public class Aplikasi {
         do {
             tampilkanMenu();
             scanner = new Scanner(System.in);
-            opsi = scanner.nextInt();
+            try {
+                opsi = scanner.nextInt();
+            } catch(Exception e) {
+                System.err.println("Ada kesalahan input");
+                opsi = 0;
+            }
             proses(opsi);
         } while(opsi != 5);
     }
