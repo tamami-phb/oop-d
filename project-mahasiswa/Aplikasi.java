@@ -26,12 +26,25 @@ public class Aplikasi {
                 tampilkanFormUbahData();
                 break;
             case 3:
+                tampilkanFormHapusData();
                 break;
             case 4:
                 service.tampilkanData();
                 break;
         }
     }
+
+    private static void tampilkanFormHapusData() {
+        scanner = new Scanner(System.in);
+        String nim;
+
+        System.out.println("\n--= Form Hapus Data");
+        System.out.print  ("NIM : ");
+        nim = scanner.nextLine();
+        service.hapusData(nim);
+    }
+
+
 
     private static void tampilkanFormUbahData() {
         scanner = new Scanner(System.in);
