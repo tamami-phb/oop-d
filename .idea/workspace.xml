@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36d1c5be-393a-428d-b13f-9a3fdeeafb2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/praktek-10-audio/Aplikasi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/praktek-10-audio/services/MyPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/praktek-10-audio/ui/MainUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/praktek-10-audio/services/MyPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/praktek-10-audio/services/MyPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/praktek-10-audio/services/MyPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/praktek-10-audio/services/MyPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/praktek-10-audio/ui/MainUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/praktek-10-audio/ui/MainUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/praktek-10-audio/ui/MainUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/praktek-10-audio/ui/MainUI.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,24 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/praktek-10-audio/services/MyPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="14" column="23" selection-start-line="13" selection-start-column="12" selection-end-line="14" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-                <element signature="e#552#553#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/praktek-10-audio/ui/MainUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="22" column="45" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="45" />
+            <state relative-caret-position="166">
+              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,13 +32,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/praktek-10-audio/Aplikasi.java">
+        <entry file="file://$PROJECT_DIR$/praktek-10-audio/ui/MainUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            <state relative-caret-position="408">
+              <caret line="84" column="45" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
               <folding>
-                <element signature="e#82#83#0" expanded="true" />
-                <element signature="e#116#117#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,9 +75,9 @@
         <option value="$PROJECT_DIR$/praktek-8-gui-event/ui/MainUI.java" />
         <option value="$PROJECT_DIR$/praktek-9-image/Aplikasi.java" />
         <option value="$PROJECT_DIR$/praktek-9-image/ui/MainUI.java" />
+        <option value="$PROJECT_DIR$/praktek-10-audio/Aplikasi.java" />
         <option value="$PROJECT_DIR$/praktek-10-audio/services/MyPlayer.java" />
         <option value="$PROJECT_DIR$/praktek-10-audio/ui/MainUI.java" />
-        <option value="$PROJECT_DIR$/praktek-10-audio/Aplikasi.java" />
       </list>
     </option>
   </component>
@@ -471,37 +454,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/praktek-10-audio/Aplikasi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#82#83#0" expanded="true" />
+            <element signature="e#116#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/praktek-10-audio/services/MyPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="14" column="23" selection-start-line="13" selection-start-column="12" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="166">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/praktek-10-audio/ui/MainUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="22" column="45" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="45" />
+        <state relative-caret-position="408">
+          <caret line="84" column="45" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/praktek-10-audio/Aplikasi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding>
-            <element signature="e#82#83#0" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -50,6 +50,81 @@ public class MainUI extends JFrame {
         pack();
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        btnPutar.addActionListener(new BtnPutarClick());
+        btnHentikan.addActionListener(new BtnHentikanClick());
+        btnJeda.addActionListener(new BtnJedaClick());
+        btnLanjutkan.addActionListener(new BtnLanjutkanClick());
+
+        btnPutar.setEnabled(true);
+        btnHentikan.setEnabled(false);
+        btnJeda.setEnabled(false);
+        btnLanjutkan.setEnabled(false);
+    }
+
+
+    // --- events
+
+    private class BtnJedaClick implements ActionListener {
+        public void actionPerformed(ActionEvent evt) {
+            player.pause();
+            btnJeda.setEnabled(false);
+            btnLanjutkan.setEnabled(true);
+            btnPutar.setEnabled(false);
+            btnHentikan.setEnabled(true);
+        }
+    }
+
+    private class BtnLanjutkanClick implements ActionListener {
+        public void actionPerformed(ActionEvent evt) {
+            try {
+                player.resume();
+                btnLanjutkan.setEnabled(false);
+                btnPutar.setEnabled(false);
+                btnJeda.setEnabled(true);
+                btnHentikan.setEnabled(true);
+            } catch(UnsupportedAudioFileException e) {
+                JOptionPane.showMessageDialog(null,
+                        "Berkas Tidak didukung");
+            } catch(LineUnavailableException e) {
+                JOptionPane.showMessageDialog(null,
+                        "Hubungi developer");
+            } catch(IOException e) {
+                JOptionPane.showMessageDialog(null,
+                        "Kesalahan Input Output");
+            }
+        }
+    }
+
+    private class BtnPutarClick implements ActionListener {
+        public void actionPerformed(ActionEvent evt) {
+            try {
+                player.play();
+                btnPutar.setEnabled(false);
+                btnJeda.setEnabled(true);
+                btnLanjutkan.setEnabled(false);
+                btnHentikan.setEnabled(true);
+            } catch(UnsupportedAudioFileException e) {
+                JOptionPane.showMessageDialog(null,
+                        "Berkas Tidak didukung");
+            } catch(LineUnavailableException e) {
+                JOptionPane.showMessageDialog(null,
+                        "Hubungi developer");
+            } catch(IOException e) {
+                JOptionPane.showMessageDialog(null,
+                        "Kesalahan Input Output");
+            }
+        }
+    }
+
+    private class BtnHentikanClick implements ActionListener {
+        public void actionPerformed(ActionEvent evt) {
+            player.stop();
+            btnPutar.setEnabled(true);
+            btnJeda.setEnabled(false);
+            btnLanjutkan.setEnabled(false);
+            btnHentikan.setEnabled(false);
+        }
     }
 
 }
