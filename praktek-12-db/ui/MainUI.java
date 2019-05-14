@@ -4,6 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.*;
+import javax.swing.table.*;
+import util.*;
+import java.sql.*;
 
 public class MainUI extends JFrame {
 
@@ -15,9 +18,34 @@ public class MainUI extends JFrame {
     private JPanel panelButton;
     private Container contentPane;
     private Vector columnNames;
+    private Vector data;
+    private DefaultTableModel tableModel;
+
+    public static Koneksi koneksi;
 
     public MainUI() {
+        koneksi = new Koneksi();
         initUI();
+        initData();
+    }
+
+    private void initData() {
+        String query = "select * from mahasiswa";
+        try {
+            ResultSet result = koneksi.eksekusiQuery(query);
+            data = new Vector();
+            while(result.next()) {
+                Vector row = new Vector();
+                row.add(result.getString(1));
+                row.add(result.getString(2));
+                row.add(result.getString(3));
+                data.add(row);
+            }
+            tableModel.setDataVector(data, columnNames);
+        } catch(SQLException e) {
+            JOptionPane.showMessageDialog(this,
+                    "Ada kesalahan query");
+        }
     }
 
     private void initUI() {
@@ -29,7 +57,9 @@ public class MainUI extends JFrame {
         columnNames.add("NIM");
         columnNames.add("NAMA");
         columnNames.add("KELAS");
-        table = new JTable(null, columnNames);
+        data = new Vector();
+        tableModel = new DefaultTableModel(data, columnNames);
+        table = new JTable(tableModel);
         scrollPane = new JScrollPane(table);
         contentPane.add(scrollPane, BorderLayout.CENTER);
 
