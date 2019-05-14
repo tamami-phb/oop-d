@@ -21,6 +21,7 @@ public class MainUI extends JFrame {
     private Vector data;
     private DefaultTableModel tableModel;
 
+    public static TambahUI tambahUI;
     public static Koneksi koneksi;
 
     public MainUI() {
@@ -48,8 +49,14 @@ public class MainUI extends JFrame {
         }
     }
 
+    public void refreshTable() {
+        initData();
+    }
+
     private void initUI() {
         setTitle("Aplikasi Mahasiswa");
+
+        tambahUI = new TambahUI(this);
 
         contentPane = getContentPane();
 
@@ -76,6 +83,17 @@ public class MainUI extends JFrame {
         pack();
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        btnTambah.addActionListener(new BtnTambahClick());
+    }
+
+
+    // --- events
+
+    private class BtnTambahClick implements ActionListener {
+        public void actionPerformed(ActionEvent evt) {
+            tambahUI.setVisible(true);
+        }
     }
 
 }
