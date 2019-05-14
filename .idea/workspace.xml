@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36d1c5be-393a-428d-b13f-9a3fdeeafb2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/praktek-11-anim/Aplikasi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/praktek-11-anim/ui/MyAnimasi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/praktek-12-db/Aplikasi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/praktek-12-db/util/Koneksi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/praktek-12-db/ui/MainUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/praktek-12-db/Aplikasi.class" beforeDir="false" afterPath="$PROJECT_DIR$/praktek-12-db/Aplikasi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/praktek-12-db/Aplikasi.java" beforeDir="false" afterPath="$PROJECT_DIR$/praktek-12-db/Aplikasi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/praktek-12-db/util/Koneksi.class" beforeDir="false" afterPath="$PROJECT_DIR$/praktek-12-db/util/Koneksi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/praktek-12-db/util/Koneksi.java" beforeDir="false" afterPath="$PROJECT_DIR$/praktek-12-db/util/Koneksi.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +20,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/praktek-12-db/util/Koneksi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+            <state>
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/praktek-12-db/ui/MainUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,10 +44,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/praktek-12-db/Aplikasi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            <state>
+              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#80#81#0" expanded="true" />
+                <element signature="e#121#122#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,16 +91,16 @@
         <option value="$PROJECT_DIR$/praktek-10-audio/ui/MainUI.java" />
         <option value="$PROJECT_DIR$/praktek-11-anim/Aplikasi.java" />
         <option value="$PROJECT_DIR$/praktek-11-anim/ui/MyAnimasi.java" />
-        <option value="$PROJECT_DIR$/praktek-12-db/Aplikasi.java" />
         <option value="$PROJECT_DIR$/praktek-12-db/util/Koneksi.java" />
+        <option value="$PROJECT_DIR$/praktek-12-db/Aplikasi.java" />
+        <option value="$PROJECT_DIR$/praktek-12-db/ui/MainUI.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1440" />
     <option name="y" value="23" />
-    <option name="width" value="800" />
-    <option name="height" value="577" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -94,6 +108,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,11 +127,22 @@
               <item name="praktek-12-db" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="oop-d" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oop-d" type="462c0819:PsiDirectoryNode" />
+              <item name="praktek-12-db" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oop-d" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oop-d" type="462c0819:PsiDirectoryNode" />
+              <item name="praktek-12-db" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -185,10 +211,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="800" height="577" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1024" height="745" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992343" weight="0.30343008" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992343" visible="true" weight="0.31771895" />
       <window_info id="Structure" order="1" sideWeight="0.5007657" side_tool="true" weight="0.21894094" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -496,20 +521,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/praktek-12-db/util/Koneksi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/praktek-12-db/Aplikasi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        <state>
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#80#81#0" expanded="true" />
+            <element signature="e#121#122#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/praktek-12-db/util/Koneksi.java">
+    <entry file="file://$PROJECT_DIR$/praktek-12-db/ui/MainUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+        <state relative-caret-position="202">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
