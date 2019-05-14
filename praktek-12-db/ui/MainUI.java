@@ -22,6 +22,7 @@ public class MainUI extends JFrame {
     private DefaultTableModel tableModel;
 
     public static TambahUI tambahUI;
+    public static EditUI ubahUI;
     public static Koneksi koneksi;
 
     public MainUI() {
@@ -57,6 +58,7 @@ public class MainUI extends JFrame {
         setTitle("Aplikasi Mahasiswa");
 
         tambahUI = new TambahUI(this);
+        ubahUI = new EditUI(this);
 
         contentPane = getContentPane();
 
@@ -84,15 +86,67 @@ public class MainUI extends JFrame {
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        table.setSelectionModel(new CustomSingleModeSelection());
+
         btnTambah.addActionListener(new BtnTambahClick());
+        btnUbah.addActionListener(new BtnUbahClick());
+        btnHapus.addActionListener(new BtnHapusClick());
+    }
+
+    // --- single mode selection
+
+    private class CustomSingleModeSelection extends DefaultListSelectionModel {
+        public CustomSingleModeSelection() {
+            setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        }
     }
 
 
     // --- events
 
+    private class BtnHapusClick implements ActionListener {
+        public void actionPerformed(ActionEvent evt) {
+            String nim;
+            if(table.getSelectedRow() == -1) {
+                JOptionPane.showMessageDialog(null,
+                        "Data yang akan dihapus harus dipilih dulu");
+                return;
+            }
+            nim = "" + table.getValueAt(table.getSelectedRow(), 0);
+            String query = "delete from mahasiswa " +
+                    "where nim='" + nim + "'";
+            try {
+                int result = koneksi.eksekusiUpdate(query);
+                if(result > 0) {
+                    JOptionPane.showMessageDialog(null,
+                            "Data NIM " + nim + " telah terhapus");
+                    refreshTable();
+                }
+            } catch(SQLException e) {
+                JOptionPane.showMessageDialog(null,
+                        "Data gagal dihapus");
+            }
+        }
+    }
+
     private class BtnTambahClick implements ActionListener {
         public void actionPerformed(ActionEvent evt) {
             tambahUI.setVisible(true);
+        }
+    }
+
+    private class BtnUbahClick implements ActionListener {
+        public void actionPerformed(ActionEvent evt) {
+            String nim, nama, kelas;
+            if(table.getSelectedRow() == -1) {
+                JOptionPane.showMessageDialog(null,
+                        "Silahkan pilih dulu data yang akan diubah");
+                return;
+            }
+            nim = "" + table.getValueAt(table.getSelectedRow(), 0);
+            nama = table.getValueAt(table.getSelectedRow(), 1).toString();
+            kelas = (String) table.getValueAt(table.getSelectedRow(), 2);
+            ubahUI.tampilkanForm(nim, nama, kelas);
         }
     }
 
