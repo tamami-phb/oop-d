@@ -7,8 +7,11 @@ import java.util.*;
 import javax.swing.table.*;
 import util.*;
 import java.sql.*;
+import org.apache.log4j.Logger;
 
 public class MainUI extends JFrame {
+
+    Logger log = Logger.getLogger(MainUI.class.getName());
 
     private JTable table;
     private JScrollPane scrollPane;
@@ -47,6 +50,7 @@ public class MainUI extends JFrame {
         } catch(SQLException e) {
             JOptionPane.showMessageDialog(this,
                     "Ada kesalahan query");
+            log.error(e);
         }
     }
 

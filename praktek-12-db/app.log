@@ -1,0 +1,2 @@
+java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)
+2019-05-15 15:23:45,266 ui.MainUI.initData(MainUI.java:53):java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)
